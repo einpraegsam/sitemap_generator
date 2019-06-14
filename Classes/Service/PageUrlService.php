@@ -46,12 +46,6 @@ class PageUrlService
             $conf['additionalParams'] = '&L=' . $language;
         }
         $url = $contentObject->typoLink_URL($conf);
-
-        // clean up
-        if ($url == '') {
-            $url = '/';
-        }
-
         return $url;
     }
 }
